@@ -25,26 +25,31 @@
 
     <script>
         var pegarId = document.getElementById("pa")
-
+        // peguei um elemento do HTML pelo ID
         var pegarClass = document.getElementsByClassName("bc")
-
+        // peguei o elemento do HTML pela Class
         var pegarTag = document.getElementsByTagName("li")
-
+        // peguei o elemento do HTML pela tag
         var pegarPrimeiro = document.querySelector(".bc")
-
+        // uso do queryselector
         var pegarALL = document.querySelectorAll("bc")
-
+        // uso do queryselectorALL
         pegarId.textContent = "Novo parágrafo aqui"
-
+        // peguei a variável do elementoID e mudei o texto ali presente
         pegarId.setAttribute("class", "pc")
-
+        // atribui uma nova classe para o elementoID
         pegarId.style.color = "blue"
-        
+        // muda a cor do elementoID
+
         var elemento = document.createElement("p")
+        // criei um elemento
         elemento.textContent = "Texto aqui"
+        // adicionei um texto
         document.querySelector(".minhaDiv").appendChild(elemento)
+        // jogeui o elemento dentro da div
 
         document.querySelector(".minhaDiv").removeChild(elemento)
+        // eliminei o elemento de dentro da div
     </script>
 </body>
 </html>
