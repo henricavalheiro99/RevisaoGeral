@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <header>
+        <p id="pa">Aqui tem um parágrafo</p>
+        <p class="bc">x</p>
+        <p class="bc">y</p>
+        <p class="bc">z</p>
+        <ul>
+            <li>oi</li>
+            <li>oi</li>
+            <li>oi</li>
+        </ul>
+        <div class="minhaDiv">
+
+        </div>
+    </header>
+
+
+
+    <script>
+        var pegarId = document.getElementById("pa")
+
+        var pegarClass = document.getElementsByClassName("bc")
+
+        var pegarTag = document.getElementsByTagName("li")
+
+        var pegarPrimeiro = document.querySelector(".bc")
+
+        var pegarALL = document.querySelectorAll("bc")
+
+        pegarId.textContent = "Novo parágrafo aqui"
+
+        pegarId.setAttribute("class", "pc")
+
+        pegarId.style.color = "blue"
+        
+        var elemento = document.createElement("p")
+        elemento.textContent = "Texto aqui"
+        document.querySelector(".minhaDiv").appendChild(elemento)
+
+        document.querySelector(".minhaDiv").removeChild(elemento)
+    </script>
+</body>
+</html>
