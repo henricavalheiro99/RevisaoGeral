@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <script>
+        const Pessoa = {
+            nome : "Henri",
+            idade : 16,
+            cidade : "Birigui",
+            cumprimentar () {
+                return "Olá, meu nome é: " + this.nome + " e eu tenho " + this.idade + " anos e moro em " + this.cidade
+            }
+        }
+
+        console.log(Pessoa.cumprimentar())
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <script>
+        lista = []
+
+        while (true) {
+            numero = parseInt(prompt("Digite um número(0 para parar): "))
+            if (numero % 2 == 0){
+                lista.push(numero)
+            }
+            if (numero == 0) {
+                lista.pop()
+                break
+            }
+        }
+
+        console.log(lista)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex9</title>
+</head>
+<body>
+    <script>
+        // Verificando Propriedades: Escreva uma função que recebe um objeto e uma chave e retorna true se o objeto tem uma propriedade com essa chave e false caso contrário.
+        const Pessoa = {
+            nome: "Henri",
+            idade: 16,
+            email: "hcavalheiroavanco@gmail.com",
+            cumprimentar () {
+                return "Olá, meu nome é " + this.nome
+            }
+        }
+        function recebeObjeto (a, b) {
+            return b in a
+        }
+
+        console.log(recebeObjeto(Pessoa, idade))
+
+    </script>
+</body>
+</html>

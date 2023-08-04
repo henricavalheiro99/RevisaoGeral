@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex8</title>
+</head>
+<body>
+    <script>
+        //  Modificando Objetos: Escreva uma função que recebe um objeto, uma chave e um valor. A função deve definir a propriedade do objeto com a chave dada para ter o valor dado.
+        const Pessoa = {
+            nome: "Henri",
+            idade: 16,
+            email: "hcavalheiroavanco@gmail.com",
+            cumprimentar () {
+                return "Olá, meu nome é " + this.nome
+            }
+        }
+        var sexo = ""
+        var masculino = "Masculino"
+        function recebeObjeto (a, b, c) {
+            a[b] = c
+            return a
+        }
+
+        console.log(recebeObjeto(Pessoa, "sexo", "masculino"))
+    </script>
+</body>
+</html>

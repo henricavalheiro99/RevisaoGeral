@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+</head>
+
+<body>
+    <script>
+        // Objetos e Arrays: Crie uma função que recebe um array de objetos. Cada objeto tem propriedades para nome e idade. A função deve retornar o nome da pessoa mais velha no array.
+        lista = []
+        const Pessoa1 = {
+            nome: "Henri",
+            idade: 16
+        }
+        const Pessoa2 = {
+            nome: "Miguel",
+            idade: 3
+        }
+        const Pessoa3 = {
+            nome: "Murilovers",
+            idade: 51
+        }
+        const Pessoa4 = {
+            nome: "Vó",
+            idade: 2000000000000000
+        }
+        lista.push(Pessoa1)
+        lista.push(Pessoa2)
+        lista.push(Pessoa3)
+        lista.push(Pessoa4)
+
+        function MaisVelho(a) {
+            var maisvelho = ""
+            var maioridade = 0
+
+            for (item of lista) {
+                if (item.idade > maioridade) {
+                    maisvelho = item.nome
+                    maioridade = item.idade
+                }
+            }
+            return maisvelho
+        }
+
+        console.log(MaisVelho(lista))
+
+    </script>
+</body>
+
+</html>
